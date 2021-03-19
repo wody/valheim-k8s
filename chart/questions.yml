@@ -18,6 +18,11 @@ questions:
   description: Server password
   type: password
   group: Valheim
+- variable: serverPublic
+  label: Server public
+  description: Server public
+  type: boolean
+  group: Valheim
 - variable: networking.serviceType
   label: Service Type
   description: Networking Service Type

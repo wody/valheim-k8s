@@ -1,6 +1,7 @@
 worldName: world-name
 serverName: server-name
 password: password
+serverPublic: false
 
 resources: {}
 

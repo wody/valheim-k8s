@@ -30,6 +30,8 @@ spec:
           value: {{ .Values.password }}
         - name: SERVER_PORT
           value: "2456"
+        - name: SERVER_PUBLIC
+          value: {{ .Values.serverPublic }}
         {{ if .Values.extraEnvironmentVars -}}
         {{ range $key, $value := .Values.extraEnvironmentVars }}
         - name: {{ $key }}
