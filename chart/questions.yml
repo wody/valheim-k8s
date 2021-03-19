@@ -1,0 +1,29 @@
+namespace: valheim
+questions:
+- variable: worldName
+  label: Name of the world
+  description: Name of the world
+  required: true
+  type: string
+  group: Valheim
+- variable: serverName
+  label: Name of the server
+  description: Name of the server
+  required: true
+  type: password
+  group: Valheim
+- variable: password
+  label: Server password
+  required: true
+  description: Server password
+  type: string
+  group: Valheim
+- variable: networking.serviceType
+  label: Service Type
+  description: Networking Service Type
+  type: enum
+  options:
+  - “ClusterIP”
+  - “NodePort”
+  - “LoadBalancer
+  group: Server

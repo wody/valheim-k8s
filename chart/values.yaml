@@ -1,15 +1,19 @@
-worldName: example-world-name
-serverName: example-server-name
-password: password 
+worldName: world-name
+serverName: server-name
+password: password
 
 resources: {}
 
+replicas: 1
+
 storage:
-  kind: hostvol
+  kind: persistentVolumeClaim
   hostvol:
     path: /data/valheim
+  pvc:
+    size: 1Gi
 
 networking:
-  serviceType: LoadBalancer
+  serviceType: NodePort
 
 nodeSelector: {}
