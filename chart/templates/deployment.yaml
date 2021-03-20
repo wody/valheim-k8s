@@ -32,6 +32,10 @@ spec:
           value: "2456"
         - name: SERVER_PUBLIC
           value: {{ .Values.serverPublic | quote }}
+        - name: BACKUPS_CRON
+          value: {{ .Values.backupCron | quote }}
+        - name: BACKUPS_MAX_AGE
+          value: {{ .Values.backupMaxAge }}
         {{ if .Values.extraEnvironmentVars -}}
         {{ range $key, $value := .Values.extraEnvironmentVars }}
         - name: {{ $key }}

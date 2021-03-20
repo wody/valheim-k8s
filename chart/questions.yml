@@ -32,3 +32,18 @@ questions:
   - NodePort
   - LoadBalancer
   group: Server
+- variable: storage.pvc.size
+  label: PVC Size
+  description: PVC Size
+  type: string
+  group: Storage
+- variable: backupCron
+  label: Backup Cron
+  description: Backup Cron
+  type: string
+  group: Backup
+- variable: backupMaxAge
+  label: Backup Max Age
+  description: Backup Max Age
+  type: string
+  group: Backup

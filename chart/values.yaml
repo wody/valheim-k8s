@@ -3,6 +3,9 @@ serverName: server-name
 password: password
 serverPublic: false
 
+backupCron: "0 * * * *"
+backupMaxAge: 3
+
 resources: {}
 
 replicas: 1
