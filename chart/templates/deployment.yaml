@@ -35,7 +35,7 @@ spec:
         - name: BACKUPS_CRON
           value: {{ .Values.backupCron | quote }}
         - name: BACKUPS_MAX_AGE
-          value: {{ .Values.backupMaxAge }}
+          value: {{ .Values.backupMaxAge | quote }}
         {{ if .Values.extraEnvironmentVars -}}
         {{ range $key, $value := .Values.extraEnvironmentVars }}
         - name: {{ $key }}
